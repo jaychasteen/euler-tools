@@ -3,22 +3,17 @@
     "short_name": "eulertools",
     "author": "Jonathan Chasteen",
     "version": "0.1",
-    "description": "Provides a extra features for the Project Euler website and a browser button",
+    "description": "Provides extra features for the Project Euler website and also a browser button",
     "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Euler Tools"
+    },
     "background": {
         "scripts": [
             "lib/manager.js",
             "background.js"
         ],
         "persistent": false
-    },
-    "permissions": [
-        "https://*.projecteuler.net/*",
-        "storage"
-    ],
-    "options_page": "options.html",
-    "browser_action": {
-        "default_title": "Euler Tools"
     },
     "content_scripts": [
         {
@@ -28,5 +23,15 @@
                 "content.js"
             ]
         }
-    ]
+    ],
+    "permissions": [
+        "https://*.projecteuler.net/*",
+        "storage"
+    ],
+    "icons": {
+        "16": "images/euler-tools16.png",
+        "32": "images/euler-tools32.png",
+        "48": "images/euler-tools48.png",
+        "128": "images/euler-tools128.png"
+    }
 }
