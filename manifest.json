@@ -1,9 +1,9 @@
 {
-    "name": "Random Euler",
-    "short_name": "RandomEuler",
+    "name": "Euler Tools",
+    "short_name": "eulertools",
     "author": "Jonathan Chasteen",
-    "version": "1.0",
-    "description": "Provides a randomize button for the Project Euler nav bar, plus a button for the toolbar to open a random problem",
+    "version": "0.1",
+    "description": "Provides a extra features for the Project Euler website and a browser button",
     "manifest_version": 2,
     "background": {
         "scripts": [
@@ -18,7 +18,7 @@
     ],
     "options_page": "options.html",
     "browser_action": {
-        "default_title": "Random Euler"
+        "default_title": "Euler Tools"
     },
     "content_scripts": [
         {
