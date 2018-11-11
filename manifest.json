@@ -1,0 +1,32 @@
+{
+    "name": "Random Euler",
+    "short_name": "RandomEuler",
+    "author": "Jonathan Chasteen",
+    "version": "1.0",
+    "description": "Provides a randomize button for the Project Euler nav bar, plus a button for the toolbar to open a random problem",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "lib/manager.js",
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "https://*.projecteuler.net/*",
+        "storage"
+    ],
+    "options_page": "options.html",
+    "browser_action": {
+        "default_title": "Random Euler"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.projecteuler.net/*"],
+            "js": [
+                "lib/manager.js",
+                "content.js"
+            ]
+        }
+    ]
+}
