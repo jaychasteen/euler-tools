@@ -15,8 +15,8 @@ Future Features
 
 ## Development
 
-### Versions
+### Releases
 
-Odd numbered releases will be feature releases
+Odd numbered releases will be feature releases, e.g. 0.1, 0.3
 
 Even numbered releases will be bug fixes, code quality, testing, etc.
