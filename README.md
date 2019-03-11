@@ -12,11 +12,3 @@ Future Features
 * Data from user votes can be used to sort problems by community-rated difficulty
     - Randomly choose from only problems of a certain difficulty
     - See all problems of a certain difficulty
-
-## Development
-
-### Releases
-
-Odd numbered releases will be feature releases, e.g. 0.1, 0.3
-
-Even numbered releases will be bug fixes, code quality, testing, etc.
